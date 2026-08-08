@@ -1,0 +1,32 @@
+-- Up Migration
+
+CREATE TABLE roles (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE designations (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  role_id INT NOT NULL REFERENCES roles(id) ON DELETE CASCADE,
+  designation_id INT NOT NULL REFERENCES designations(id) ON DELETE CASCADE
+);
+
+CREATE TABLE activities (
+  id SERIAL PRIMARY KEY,
+  task TEXT NOT NULL,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Down Migration
+
+DROP TABLE IF EXISTS activities;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS designations;
+DROP TABLE IF EXISTS roles;

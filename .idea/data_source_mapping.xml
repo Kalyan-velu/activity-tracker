@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/apps/api/migrations/1700000000002_reset_and_recreate_tables.sql" value="80ec003f-35e1-45f4-b51b-ae53cda1f8a6" />
+  </component>
+</project>

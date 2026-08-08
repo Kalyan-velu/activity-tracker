@@ -1,0 +1,7 @@
+POST http://localhost:8000/api/activities
+Content-Type: application/json
+
+{
+  "task": "Test Task",
+  "user_id": 1
+}

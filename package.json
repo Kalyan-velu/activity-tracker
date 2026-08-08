@@ -16,5 +16,11 @@
   "packageManager": "pnpm@10.19.0",
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@types/pg": "^8.21.0",
+    "dotenv": "^17.4.2",
+    "pg": "^8.22.0",
+    "zod": "^4.4.3"
   }
 }
