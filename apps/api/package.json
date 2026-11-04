@@ -13,7 +13,7 @@
     "migrate:redo": "node-pg-migrate redo"
   },
   "dependencies": {
-    "@hono/node-server": "^2.1.0",
+    "@hono/node-server": "^2.1.3",
     "@hono/zod-validator": "^0.9.0",
     "hono": "^4.13.1",
     "node-pg-migrate": "^9.0.0",
